@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>
+    Cat Clicker
+</title>
+</head>
+<style>
+    #list{
+
+        color:crimson;
+        size:40px;
+        
+        
+    }
+    #box{
+        display:inline-flex;
+        width: 60%;
+        height:60%;
+        align-items:center;
+        justify-content: center;
+        flex-direction:;
+        padding: top 5;
+    }
+</style>
+<body>
+<div id="head">
+    <center><p><h1>Cat Clicker App</h1></p></center>
+</div>
+<div id="box">
+<img src="cute.jpg" height=60% width=40% id="catimg">
+&nbsp;
+<img src="kitty-cat-kitten-pet-45201.jpeg" height=60% width=40% id="catimg2">
+</div>
+        <p>
+            <H3> Count of CAT 1:</H3><span id="result">0</span><br><br>
+             <H3>Count of CAT 2:</H3><span id="result2">0</span>
+         </p>
+<script>
+
+        document.getElementById("catimg").addEventListener("click", getCount);
+        document.getElementById("catimg2").addEventListener("click",getCount2);
+    
+            function getCount(){
+                var count= parseInt(document.getElementById("result").innerHTML);
+                console.log(count);
+                count++;
+  
+                document.getElementById("result").innerHTML=count; 
+            }
+            function getCount2(){
+                var count2=parseInt(document.getElementById("result2").innerHTML)
+                count2++;
+            
+                document.getElementById("result2").innerHTML=count2;       
+            }
+    
+
+ </script>
+ </body>           
